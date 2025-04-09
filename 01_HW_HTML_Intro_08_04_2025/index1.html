@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .tooltip .tooltip-content {
+        visibility: hidden;
+        width: 250px;
+        background-color: #fff;
+        color: #000;
+        text-align: left;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        z-index: 1;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: normal;
+      }
+
+      .tooltip:hover .tooltip-content {
+        visibility: visible;
+      }
+
+      .tooltip img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Марк Аллан Дакаскос родился в
+      <span class="tooltip">
+        <a href="https://ru.wikipedia.org/wiki/Гонолулу" target="_blank">
+          <em>Гонолулу</em>
+        </a>
+        <span class="tooltip-content">
+          <strong>Гонолулу</strong> — столица штата Гавайи, США, расположена на
+          острове Оаху.
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HonoluluM.png"
+            alt="Гонолулу"
+          />
+        </span>
+      </span>
+    </p>
+  </body>
+</html>
