@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <style>
+      .required-star {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Event Registration Form</h2>
+
+    <form action="/register" method="post" oninput="submitBtn.disabled = !this.checkValidity()">
+      <label for="name">Name: </label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name..."
+        required
+      /><br /><br />
+
+      <label for="phone" title="Format: +380 (XX) XXX-XX-XX">
+        Phone: <span class="required-star">*</span> </label
+      ><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number..."
+        placeholder="Example: +380 (95) 123-45-67"
+        pattern="\+380 \(\d{2}\) \d{3}-\d{2}-\d{2}"
+        required
+      /><br /><br />
+
+      <label for="email">Email: <span class="required-star">*</span></label
+      ><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email..."
+        required
+      /><br /><br />
+
+      <label
+        for="password"
+        title="Password requirements: uppercase letter, special character, number, and minimum length of 8 characters"
+      >
+        Password: <span class="required-star">*</span> </label
+      ><br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password..."
+        title="Minimum 8 characters, including a number, uppercase and lowercase letters, special character"
+        pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%*?&]).{8,}"
+        required
+      /><br /><br />
+
+      <label for="birthdate"
+        >Date of Birth: <span class="required-star">*</span></label
+      ><br />
+      <input type="date" id="birthdate" name="birthdate" required /><br /><br />
+
+      <label for="event_date"
+        >Event Date: <span class="required-star">*</span></label
+      ><br />
+      <input
+        type="date"
+        id="event_date"
+        name="event_date"
+        required
+      /><br /><br />
+
+      <p>Gender: <span class="required-star">*</span></p>
+      <label
+        ><input type="radio" name="gender" value="male" required />
+        Male</label
+      ><br />
+      <label><input type="radio" name="gender" value="female" /> Female</label
+      ><br />
+      <br />
+
+      <label for="city"
+        >Select City: <span class="required-star">*</span></label
+      ><br />
+      <select id="city" name="city" required>
+        <option value="">-- Select city --</option>
+        <option value="kyiv">Kyiv</option>
+        <option value="kharkiv">Kharkiv</option>
+        <option value="odesa">Odesa</option>
+        <option value="dnipro">Dnipro</option>
+        <option value="lviv">Lviv</option>
+        <option value="zaporizhzhia">Zaporizhzhia</option>
+        <option value="kryvyi-rih">Kryvyi Rih</option>
+        <option value="mykolaiv">Mykolaiv</option>
+        <option value="mariupol">Mariupol</option>
+        <option value="vinnitsa">Vinnytsia</option>
+        <option value="kherson">Kherson</option>
+        <option value="chernihiv">Chernihiv</option>
+        <option value="poltava">Poltava</option>
+        <option value="cherkasy">Cherkasy</option>
+        <option value="sumy">Sumy</option>
+        <option value="zhytomyr">Zhytomyr</option>
+        <option value="khmelnytskyi">Khmelnytskyi</option>
+        <option value="rivne">Rivne</option>
+        <option value="ivano-frankivsk">Ivano-Frankivsk</option>
+        <option value="ternopil">Ternopil</option>
+        <option value="uzhhorod">Uzhhorod</option>
+        <option value="lutsk">Lutsk</option>
+        <option value="kropyvnytskyi">Kropyvnytskyi</option>
+        <option value="berehove">Berehove</option>
+        <option value="bila-tserkva">Bila Tserkva</option></select
+      ><br /><br />
+
+      <label for="hotel"
+        >Do you need a hotel? <span class="required-star">*</span></label
+      ><br />
+      <select id="hotel" name="hotel" required>
+        <option value="">-- Select an option --</option>
+        <option value="yes">Yes, I need one</option>
+        <option value="no">No, I don't need one</option>
+        <option value="unsure">Not sure yet</option></select
+      ><br /><br />
+
+      <label for="nights"
+        >Number of nights: <span class="required-star">*</span></label
+      ><br />
+      <select id="nights" name="nights" required>
+        <option value="">-- Specify number --</option>
+        <option value="1">1 night</option>
+        <option value="2">2 nights</option>
+        <option value="3">3 nights</option>
+        <option value="4">4 nights</option>
+        <option value="5plus">5 or more</option></select
+      ><br /><br />
+
+      <label for="hotel_class"
+        >Hotel category: <span class="required-star">*</span></label
+      ><br />
+      <select id="hotel_class" name="hotel_class" required>
+        <option value="">-- Select category --</option>
+        <option value="3stars">3 stars</option>
+        <option value="4stars">4 stars</option>
+        <option value="5stars">5 stars</option>
+        <option value="hostel">Hostel</option>
+        <option value="apartment">Apartment</option></select
+      ><br /><br />
+
+      <label>
+        <input type="checkbox" name="subscribe" checked />
+        Subscribe to newsletter </label
+      ><br /><br />
+
+      <label>
+        <input type="checkbox" name="agreement" id="agreement" required />
+        I agree to the processing of personal data
+        <span class="required-star">*</span> </label
+      ><br /><br />
+
+      <input type="submit" id="submitBtn" value="Register" disabled />
+      <input type="reset" value="Reset data" />
+    </form>
+  </body>
+</html>
