@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400; /* 100-900 */
+  font-style: normal;
+}
+
+header {
+  background-image: url("./images/Coffee.jpg");
+  height: 400px;
+  background-position: center; /* Сопоставление элемента с центром фонового изображения */
+  background-size: cover; /* Выравнивание элемента и фоновой картинки по одной из оси */
+  /* background-repeat: no-repeat; */
+}
+
+/* Шапка */
+/*header {
+  background: #3e2723;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}*/
+
+header h1 {
+  /* margin: 0; */
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Основной блок */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Секции */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Карточки */
+section div {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: justify; /*Выравнивание текста по краям*/
+  /* text-indent: 30px; абзацный отступ */
+}
+
+section div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  color: #6d4c41;
+  margin-top: 0;
+}
+
+p{
+  text-indent: 30px; /*абзацный отступ*/
+}
+
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #3e2723;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #795548;
+  border-color: #795548;
+}
+
+/* Футер (можно будет заполнить позже) */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  color: #888;
+  font-size: 0.9rem;
+}
