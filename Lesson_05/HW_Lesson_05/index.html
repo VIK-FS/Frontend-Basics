@@ -1,7 +1,7 @@
 <!-- Homework
 Задание
 Сверстать страницу, в которой будет находиться 3 карточки и header 
-(cоздайте новые index.html и styles.css файлы)
+(создайте новые index.html и styles.css файлы)
 
 Требования:
 
@@ -16,47 +16,44 @@
 при этом информация на карточках не должна закрываться -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Client Cards</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Cards</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Clients</h1>
+    </header>
 
-  <header>
-    <h1>Clients</h1>
-  </header>
-
-  <main>
-    <div class="card" style="top: 0;">
-      <img src="./assets/images/Anna_Ivanova.jpg" alt="Client photo">
-      <div class="info">
-        <h2>Anna Ivanova</h2>
-        <p>Age: 38</p>
-        <p>Gender: Female</p>
+    <main>
+      <div class="card card1">
+        <img src="./assets/images/Anna_Ivanova.jpg" alt="Client photo" />
+        <div class="info">
+          <h2>Anna Ivanova</h2>
+          <p>Age: 38</p>
+          <p>Gender: Female</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" style="top: 40px;">
-      <img src="./assets/images/Igor_Petrov.jpg" alt="Client photo">
-      <div class="info">
-        <h2>Igor Petrov</h2>
-        <p>Age: 35</p>
-        <p>Gender: Male</p>
+      <div class="card card2">
+        <img src="./assets/images/Igor_Petrov.jpg" alt="Client photo" />
+        <div class="info">
+          <h2>Igor Petrov</h2>
+          <p>Age: 35</p>
+          <p>Gender: Male</p>
+        </div>
       </div>
-    </div>
 
-    <div class="card" style="top: 80px;">
-      <img src="./assets/images/Maria_Sidorova.jpg" alt="Client photo">
-      <div class="info">
-        <h2>Maria Sidorova</h2>
-        <p>Age: 26</p>
-        <p>Gender: Female</p>
+      <div class="card card3">
+        <img src="./assets/images/Maria_Sidorova.jpg" alt="Client photo" />
+        <div class="info">
+          <h2>Maria Sidorova</h2>
+          <p>Age: 26</p>
+          <p>Gender: Female</p>
+        </div>
       </div>
-    </div>
-  </main>
-
-</body>
+    </main>
+  </body>
 </html>
-

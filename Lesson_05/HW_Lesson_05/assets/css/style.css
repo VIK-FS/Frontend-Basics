@@ -1,4 +1,5 @@
 body {
+  padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
   padding-top: 70px; /* чтобы не перекрывать header */
@@ -25,11 +26,11 @@ main {
   padding: 20px;
 }
 
-.card::after {
+/* .card::after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 .card {
   position: relative;
@@ -50,12 +51,14 @@ main {
   transform: scale(1.02);
 }
 
-.card:nth-child(2) {
-  left: 20px;
+.card2 {
+  top: 40px;
+  left: 80px;
   z-index: 2;
 }
-.card:nth-child(3) {
-  left: 40px;
+.card3 {
+  top: 80px;
+  left: 160px;
   z-index: 3;
 }
 
