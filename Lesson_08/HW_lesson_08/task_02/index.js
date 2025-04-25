@@ -11,7 +11,11 @@
 const catsQty = 0;
 const me = "I am not a cat person";
 
-if (!catsQty) {
+// if (!catsQty) {
+//   console.log(me);
+// }
+
+if (catsQty === 0) {
   console.log(me);
 }
 
