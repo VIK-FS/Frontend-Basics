@@ -6,8 +6,8 @@
  */
 
 function swapFirstLastElements(array) {
+  if (array.length < 2) return array;
   const copyArray = [...array];
-  if (copyArray.length < 2) return copyArray;
   let temp = array[0];
   copyArray[0] = copyArray[copyArray.length - 1];
   copyArray[copyArray.length - 1] = temp;
