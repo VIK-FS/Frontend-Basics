@@ -13,9 +13,9 @@ const arr = ["apple", "orange", "banana"];
 const prefix = "pine";
 
 function prefixPlusArrElement(array, prefix) {
-  const copyArray = [...array];
-  for (let i = 0; i < copyArray.length; i++) {
-    copyArray[i] = prefix + copyArray[i];
+  const copyArray = [];
+  for (let i = 0; i < array.length; i++) {
+    copyArray[i] = prefix + array[i];
   }
   return copyArray;
 }

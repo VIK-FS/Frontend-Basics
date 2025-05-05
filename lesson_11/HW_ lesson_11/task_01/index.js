@@ -23,4 +23,4 @@ const house = {
 
 const { address, wallColor } = house;
 console.log("address: ", address);
-console.log("wallColor: ", wallColor);
+console.log("address: ", address);
