@@ -1,0 +1,117 @@
+/* ====== Расширенный Reset CSS ====== */
+
+/* 1. Наследуем box-sizing для всех элементов */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Убираем отступы и внутренние отступы */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 3. Удаляем стандартные стили у списков */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* 4. Удаляем стили у ссылок */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 5. Убираем жирность у strong и b */
+  b, strong {
+    font-weight: normal;
+  }
+  
+  /* 6. Убираем наклон у i и em */
+  i, em {
+    font-style: normal;
+  }
+  
+  /* 7. Убираем стандартные стили заголовков */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+  }
+  
+  /* 8. Обнуляем стили формы и полей */
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  
+  /* 9. Курсор для кнопок */
+  button {
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  /* 10. Обнуляем таблицы */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  /* 11. Изображения: адаптивные */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 12. Обнуляем iframe */
+  iframe {
+    border: 0;
+  }
+  
+  /* 13. Базовые стили для body */
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: system-ui, sans-serif;
+    background-color: #fff;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  
+  /* 14. Наследуем шрифт в формах */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 15. Убираем выделение с фокуса, если не нужно */
+  :focus {
+    outline: none;
+  }
+  
+  /* 16. Глобальное поведение для scroll */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* 17. Устанавливаем базовые стили для кода */
+  pre, code {
+    font-family: monospace;
+    font-size: 1em;
+  }
+  
+  /* 18. Обнуляем маркеры для summary/details */
+  summary {
+    list-style: none;
+    cursor: pointer;
+  }

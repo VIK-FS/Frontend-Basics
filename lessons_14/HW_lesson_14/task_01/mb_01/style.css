@@ -1,0 +1,68 @@
+#magic-btn {
+  cursor: pointer;
+  background-color: #f7c815;
+  color: white;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+}
+
+.second-btn {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+}
+
+#text {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.styled,
+.second-btn {
+  border: 0;
+  /* line-height: 2.5; */
+  /* padding: 0 20px; */
+  /* font-size: 1rem; */
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+#magic-btn:hover {
+  background-color: rgb(249, 216, 96);
+}
+
+/* #magic-btn-2:hover{
+    background-color: rgb(210, 180, 140,1);
+} */
+
+.second-btn:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active,
+.second-btn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

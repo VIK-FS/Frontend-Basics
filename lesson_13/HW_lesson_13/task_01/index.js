@@ -52,8 +52,15 @@ console.log("CostPetrolCars:", costPetrolCars);
 // Задание 5
 // Повысьте цену всех машин в массиве на 20%.
 
+const carsPriceIncreaseBy20 = cars.map((car) => ({
+  ...car,
+  price: car.price *1.2
+}));
+console.log("OriginalCars: ", cars);
+console.log("carsPriceIncreaseBy20: ", carsPriceIncreaseBy20);
+
 cars.forEach((car) => (car.price += car.price * 0.2));
-console.log("cars: ", cars);
+console.log("carsPriceIncreaseBy20%: ", cars);
 
 // Задание 6
 // Создайте новый массив, где все дизельные машины
