@@ -3,7 +3,6 @@ function fetchBooks() {
   fetch("https://vik-fs.github.io/my-favorite-book/book.json")
     .then((res) => res.json())
     .then((data) => {
-      // Создаём элементы и добавляем данные
       const titleElement = document.createElement("h1");
       titleElement.textContent = `Title: ${data.title}`;
 
@@ -13,7 +12,6 @@ function fetchBooks() {
       const yearElement = document.createElement("p");
       yearElement.textContent = `Year: ${data.year}`;
 
-      // Добавляем в body
       document.body.appendChild(titleElement);
       document.body.appendChild(authorElement);
       document.body.appendChild(yearElement);
