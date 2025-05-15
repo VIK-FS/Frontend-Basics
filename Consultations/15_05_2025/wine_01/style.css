@@ -1,0 +1,38 @@
+/* Стили для контейнера */
+/* #wine-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    padding: 20px;
+  } */
+  
+  .container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 40px;
+      /* padding: 20px; */
+    }
+
+  /* Общий стиль карточки */
+  .wine-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .green-bg {
+    background-color: #d4f9d2; /* светло-зелёный */
+  }
+  
+  .blue-bg {
+    background-color: #d2f0f9; /* светло-голубой */
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
