@@ -1,3 +1,10 @@
+/**
+Задание 1
+Создайте на главной странице "/" спискок продуктов. Получите продукты с помощь fetch, 
+используйте async await. Отобразите полученные продукты на странице.
+
+Перейдите по ссылке на докуменатцию сайта: https://fakeapi.platzi.com/en/rest/products/
+ */
 const container = document.querySelector(".container");
 
 async function fetchProducts() {
